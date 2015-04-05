@@ -4,6 +4,18 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+require('./models/Posts');
+require('./models/Comments');
+
+var options = {
+  db: { native_parser: true },
+  server: { poolSize: 5 },
+  //replset: { rs_name: 'myReplicaSetName' },
+  user: 'sa',
+  pass: 'p@55w0rd'
+}
+mongoose.connect('mongodb://localhost:27017/news');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
