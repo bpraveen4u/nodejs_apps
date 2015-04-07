@@ -1,6 +1,7 @@
 'use strict';
 
-app.controller('AuthCtrl', [
+angular.module('AuthModule', [])
+.controller('AuthCtrl', [
 '$scope', 
 '$state', 
 'auth',

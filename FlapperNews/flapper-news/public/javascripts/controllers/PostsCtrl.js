@@ -1,6 +1,7 @@
 'use strict';
 
-app.controller('PostsCtrl', [
+angular.module('postModule', [])
+.controller('PostsCtrl', [
 '$scope',
 'posts',
 'post',

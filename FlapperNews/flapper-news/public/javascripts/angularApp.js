@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('flapperNews', ['ui.router']);
+var app = angular.module('flapperNews', ['ui.router', 'NavModule', 'postModule', 'AuthModule']);
 
 app.config([           							
 	'$stateProvider',
