@@ -19,6 +19,8 @@
     "grunt-contrib-uglify": "^0.9.1"
   },
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "file-stream-rotator": "0.0.6",
+    "morgan": "^1.5.2"
   }
 }
